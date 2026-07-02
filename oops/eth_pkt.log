@@ -1,0 +1,992 @@
+# vsim -novopt -suppress 12110 top -l eth_pkt.log 
+# Start time: 21:36:24 on Jun 25,2026
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.a19_svh_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.a19_svh_unit
+# Loading work.top
+# ** Error: (vsim-3043) Unresolved reference to 'gen2bfm' in $root.gen2bfm.get.
+#    Time: 0 ns  Iteration: 0  Region: /a19_svh_unit File: eth_bfm.sv Line: 13
+# ** Error: (vsim-3043) Unresolved reference to 'gen2bfm' in $root.gen2bfm.put.
+#    Time: 0 ns  Iteration: 0  Region: /a19_svh_unit File: eth_gen.sv Line: 33
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./run.do PAUSED at line 3
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 21:40:06 on Jun 25,2026
+# vlog -reportprogress 300 a19.svh 
+# -- Compiling package a19_svh_unit
+# ** Warning: eth_gen.sv(17): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(23): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(30): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 21:40:06 on Jun 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 3
+# vsim -novopt -suppress 12110 top -l eth_pkt.log 
+# Start time: 21:36:24 on Jun 25,2026
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.a19_svh_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.a19_svh_unit
+# Loading work.top
+# -----time = 0 , name = eth_good_pkt-----
+# sa = 10100010110100001000010001011111100000001101
+# len = 814
+# count_good = 3
+# -----time = 0 , name = eth_ill_pkt-----
+# sa = 100001011110111010100000111110011111100111010101
+# len = 824
+# count_ill = 3
+# -----time = 0 , name = eth_bad_pkt-----
+# sa = 10010000111000110100110011100100001111110001110
+# len = 429
+# count_bad = 4
+# -----time = 0 , name = eth_bad_pkt-----
+# sa = 101100111001000010101110110111110010001010000001
+# len = 104
+# count_bad = 4
+# -----time = 0 , name = eth_good_pkt-----
+# sa = 1110101100000101001010101100011100011001010101
+# len = 477
+# count_good = 3
+# -----time = 0 , name = eth_bad_pkt-----
+# sa = 1111101100111110110010011100001101010110111011
+# len = 780
+# count_bad = 4
+# -----time = 0 , name = eth_bad_pkt-----
+# sa = 110000110110011001000000011000011111111111101010
+# len = 64
+# count_bad = 4
+# -----time = 0 , name = eth_good_pkt-----
+# sa = 11111110100011101100101011111100011010110111001
+# len = 395
+# count_good = 3
+# -----time = 0 , name = eth_ill_pkt-----
+# sa = 11100000111001000011000111000010101100001011
+# len = 727
+# count_ill = 3
+# -----time = 0 , name = eth_ill_pkt-----
+# sa = 111010101000100001000001000100111100010100000110
+# len = 279
+# count_ill = 3
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 22:07:11 on Jun 25,2026
+# vlog -reportprogress 300 a19.svh 
+# ** Error: (vlog-13069) ** while parsing file included at a19.svh(3)
+# ** at eth_gen.sv(13): near "begin": syntax error, unexpected begin.
+# ** Error: ** while parsing file included at a19.svh(3)
+# ** at eth_gen.sv(17): (vlog-2730) Undefined variable: 'sel'.
+# ** Error: (vlog-13069) ** while parsing file included at a19.svh(3)
+# ** at eth_gen.sv(40): near "test_all_good_pkts": syntax error, unexpected STRING_LITERAL.
+# ** Error: ** while parsing file included at a19.svh(3)
+# ** at eth_gen.sv(44): (vlog-2730) Undefined variable: 'gpkt'.
+# ** Error: (vlog-13069) ** while parsing file included at a19.svh(3)
+# ** at eth_gen.sv(46): near "end": syntax error, unexpected end.
+# ** Error: ** while parsing file included at a19.svh(3)
+# ** at eth_gen.sv(51): (vlog-2730) Undefined variable: 'bpkt'.
+# ** Error: (vlog-13069) ** while parsing file included at a19.svh(3)
+# ** at eth_gen.sv(53): near "end": syntax error, unexpected end.
+# ** Error: ** while parsing file included at a19.svh(3)
+# ** at eth_gen.sv(58): (vlog-2730) Undefined variable: 'ipkt'.
+# ** Error: (vlog-13069) ** while parsing file included at a19.svh(3)
+# ** at eth_gen.sv(60): near "end": syntax error, unexpected end.
+# ** Error (suppressible): ** while parsing file included at a19.svh(4)
+# ** at eth_bfm.sv(3): (vlog-2388) 'gpkt' already declared in this scope (run).
+# ** Error (suppressible): ** while parsing file included at a19.svh(4)
+# ** at eth_bfm.sv(4): (vlog-2388) 'bpkt' already declared in this scope (run).
+# ** Error (suppressible): ** while parsing file included at a19.svh(4)
+# ** at eth_bfm.sv(5): (vlog-2388) 'ipkt' already declared in this scope (run).
+# ** Error: ** while parsing file included at a19.svh(4)
+# ** at eth_bfm.sv(7): Illegal declaration after the statement near line '1'.  Declarations must precede statements.  Look for stray semicolons.
+# ** Error: ** while parsing file included at a19.svh(4)
+# ** at eth_bfm.sv(8): (vlog-2730) Undefined variable: 'get_gen2bfm'.
+# ** Error: (vlog-13069) ** while parsing file included at a19.svh(4)
+# ** at eth_bfm.sv(9): near "endfunction": syntax error, unexpected endfunction, expecting endtask.
+# ** Error: ** while parsing file included at a19.svh(5)
+# ** at eth_env.sv(2): Invalid type 'eth_bfm'. Please check the type of the variable 'bfm'.
+# ** Error: ** while parsing file included at a19.svh(5)
+# ** at eth_env.sv(13): (vlog-2730) Undefined variable: 'bfm'.
+# End time: 22:07:11 on Jun 25,2026, Elapsed time: 0:00:00
+# Errors: 17, Warnings: 0
+# ** Error: C:/questasim64_10.7c/win64/vlog failed.
+# Error in macro ./run.do line 2
+# C:/questasim64_10.7c/win64/vlog failed.
+#     while executing
+# "vlog a19.svh"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 22:08:05 on Jun 25,2026
+# vlog -reportprogress 300 a19.svh 
+# -- Compiling package a19_svh_unit
+# ** Error: eth_gen.sv(8): (vlog-13216) Illegal assignment to type 'string' from type 'class std.mailbox': Types are not assignment compatible.
+# ** Warning: eth_gen.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(26): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(33): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(42): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(49): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(56): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Error: eth_env.sv(14): (vlog-13216) Arg. 'testname' of 'new':  Illegal assignment to type 'class std.mailbox' from type 'string': Types are not assignment compatible.
+# -- Compiling module top
+# ** Error: eth_gen.sv(8): (vlog-13216) Illegal assignment to type 'string' from type 'class std.mailbox': Types are not assignment compatible.
+# ** Error: eth_env.sv(14): (vlog-13216) Arg. 'testname' of 'new':  Illegal assignment to type 'class std.mailbox' from type 'string': Types are not assignment compatible.
+# ** Error (suppressible): eth_top.sv(11): (vlog-7041) String assignment:  Arg. 'testname' of 'new':  Assigning a string to a packed type requires a cast.
+# End time: 22:08:06 on Jun 25,2026, Elapsed time: 0:00:01
+# Errors: 5, Warnings: 6
+# ** Error: C:/questasim64_10.7c/win64/vlog failed.
+# Error in macro ./run.do line 2
+# C:/questasim64_10.7c/win64/vlog failed.
+#     while executing
+# "vlog a19.svh"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 22:09:31 on Jun 25,2026
+# vlog -reportprogress 300 a19.svh 
+# -- Compiling package a19_svh_unit
+# ** Warning: eth_gen.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(26): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(33): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(42): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(49): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(56): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# ** Error (suppressible): eth_top.sv(11): (vlog-7041) String assignment:  Arg. 'testname' of 'new':  Assigning a string to a packed type requires a cast.
+# End time: 22:09:31 on Jun 25,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 6
+# ** Error: C:/questasim64_10.7c/win64/vlog failed.
+# Error in macro ./run.do line 2
+# C:/questasim64_10.7c/win64/vlog failed.
+#     while executing
+# "vlog a19.svh"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 22:10:03 on Jun 25,2026
+# vlog -reportprogress 300 a19.svh 
+# -- Compiling package a19_svh_unit
+# ** Warning: eth_gen.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(26): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(33): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(42): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(49): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(56): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 22:10:03 on Jun 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
+# End time: 22:10:06 on Jun 25,2026, Elapsed time: 0:33:42
+# Errors: 29, Warnings: 20
+# vsim -novopt -suppress 12110 top "+testname="test_all_good_pkts"" -l eth_pkt.log 
+# Start time: 22:10:06 on Jun 25,2026
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.a19_svh_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.a19_svh_unit
+# Loading work.top
+# testname received from user = "test_all_good_pkts"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 22:12:05 on Jun 25,2026
+# vlog -reportprogress 300 a19.svh 
+# ** Error: ** while parsing file included at a19.svh(3)
+# ** at eth_gen.sv(42): Illegal declaration after the statement near line '40'.  Declarations must precede statements.  Look for stray semicolons.
+# End time: 22:12:05 on Jun 25,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/questasim64_10.7c/win64/vlog failed.
+# Error in macro ./run.do line 2
+# C:/questasim64_10.7c/win64/vlog failed.
+#     while executing
+# "vlog a19.svh"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 22:14:48 on Jun 25,2026
+# vlog -reportprogress 300 a19.svh 
+# ** Error: ** while parsing file included at a19.svh(3)
+# ** at eth_gen.sv(42): Illegal declaration after the statement near line '40'.  Declarations must precede statements.  Look for stray semicolons.
+# End time: 22:14:48 on Jun 25,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/questasim64_10.7c/win64/vlog failed.
+# Error in macro ./run.do line 2
+# C:/questasim64_10.7c/win64/vlog failed.
+#     while executing
+# "vlog a19.svh"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 22:15:01 on Jun 25,2026
+# vlog -reportprogress 300 a19.svh 
+# -- Compiling package a19_svh_unit
+# ** Warning: eth_gen.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(26): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(33): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(43): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(50): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(57): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 22:15:01 on Jun 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
+# End time: 22:15:05 on Jun 25,2026, Elapsed time: 0:04:59
+# Errors: 8, Warnings: 7
+# vsim -novopt -suppress 12110 top "+testname="test_all_good_pkts"" -l eth_pkt.log 
+# Start time: 22:15:05 on Jun 25,2026
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.a19_svh_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.a19_svh_unit
+# Loading work.top
+# testname received from user = "test_all_good_pkts"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 22:18:05 on Jun 25,2026
+# vlog -reportprogress 300 a19.svh 
+# -- Compiling package a19_svh_unit
+# ** Warning: eth_gen.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(26): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(33): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(43): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(50): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(57): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 22:18:05 on Jun 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
+# End time: 22:18:07 on Jun 25,2026, Elapsed time: 0:03:02
+# Errors: 0, Warnings: 7
+# vsim -novopt -suppress 12110 top "+testname="test_all_good_pkts"" -l eth_pkt.log 
+# Start time: 22:18:08 on Jun 25,2026
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.a19_svh_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.a19_svh_unit
+# Loading work.top
+# testname received from user = "test_all_good_pkts"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 22:19:28 on Jun 25,2026
+# vlog -reportprogress 300 a19.svh 
+# -- Compiling package a19_svh_unit
+# ** Warning: eth_gen.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(26): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(33): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(43): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(50): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(57): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 22:19:28 on Jun 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
+# End time: 22:19:31 on Jun 25,2026, Elapsed time: 0:01:23
+# Errors: 0, Warnings: 7
+# vsim -novopt -suppress 12110 top "+testname="test_all_good_pkts"" -l eth_pkt.log 
+# Start time: 22:19:31 on Jun 25,2026
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.a19_svh_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.a19_svh_unit
+# Loading work.top
+# testname received from user = "test_all_good_pkts"
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 22:20:01 on Jun 25,2026
+# vlog -reportprogress 300 a19.svh 
+# -- Compiling package a19_svh_unit
+# ** Warning: eth_gen.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(26): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(33): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(43): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(50): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(57): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 22:20:01 on Jun 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
+# End time: 22:20:04 on Jun 25,2026, Elapsed time: 0:00:33
+# Errors: 0, Warnings: 7
+# vsim -novopt -suppress 12110 top "+testname=test_all_good_pkts" -l eth_pkt.log 
+# Start time: 22:20:04 on Jun 25,2026
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.a19_svh_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.a19_svh_unit
+# Loading work.top
+# testname received from user = test_all_good_pkts
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 22:21:15 on Jun 25,2026
+# vlog -reportprogress 300 a19.svh 
+# -- Compiling package a19_svh_unit
+# ** Warning: eth_gen.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(26): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(33): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(43): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(50): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(57): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 22:21:15 on Jun 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
+# End time: 22:21:18 on Jun 25,2026, Elapsed time: 0:01:14
+# Errors: 0, Warnings: 7
+# vsim -novopt -suppress 12110 top "+test_all_good_pkts" -l eth_pkt.log 
+# Start time: 22:21:18 on Jun 25,2026
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.a19_svh_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.a19_svh_unit
+# Loading work.top
+# testname received from user = test_all_good_pkts
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 22:21:53 on Jun 25,2026
+# vlog -reportprogress 300 a19.svh 
+# -- Compiling package a19_svh_unit
+# ** Warning: eth_gen.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(26): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(33): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(43): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(50): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(57): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 22:21:53 on Jun 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
+# End time: 22:21:55 on Jun 25,2026, Elapsed time: 0:00:37
+# Errors: 0, Warnings: 7
+# vsim -novopt -suppress 12110 top "+"test_all_good_pkts"" -l eth_pkt.log 
+# Start time: 22:21:55 on Jun 25,2026
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.a19_svh_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.a19_svh_unit
+# Loading work.top
+# testname received from user = "test_all_good_pkts"
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 22:22:21 on Jun 25,2026
+# vlog -reportprogress 300 a19.svh 
+# -- Compiling package a19_svh_unit
+# ** Warning: eth_gen.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(26): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(33): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(43): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(50): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(57): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 22:22:21 on Jun 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
+# End time: 22:22:24 on Jun 25,2026, Elapsed time: 0:00:29
+# Errors: 0, Warnings: 7
+# vsim -novopt -suppress 12110 top "+"test_all_rand_pkts"" -l eth_pkt.log 
+# Start time: 22:22:24 on Jun 25,2026
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.a19_svh_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.a19_svh_unit
+# Loading work.top
+# testname received from user = "test_all_rand_pkts"
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 22:24:00 on Jun 25,2026
+# vlog -reportprogress 300 a19.svh 
+# -- Compiling package a19_svh_unit
+# ** Warning: eth_gen.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(26): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(33): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(43): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(50): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(57): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 22:24:00 on Jun 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
+# End time: 22:24:03 on Jun 25,2026, Elapsed time: 0:01:39
+# Errors: 0, Warnings: 7
+# vsim -novopt -suppress 12110 top "+"test_all_rand_pkts"" -l eth_pkt.log 
+# Start time: 22:24:03 on Jun 25,2026
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.a19_svh_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.a19_svh_unit
+# Loading work.top
+# no testname provided by user
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 22:24:44 on Jun 25,2026
+# vlog -reportprogress 300 a19.svh 
+# -- Compiling package a19_svh_unit
+# ** Warning: eth_gen.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(26): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(33): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(43): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(50): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(57): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 22:24:45 on Jun 25,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 6
+# End time: 22:24:47 on Jun 25,2026, Elapsed time: 0:00:44
+# Errors: 0, Warnings: 7
+# vsim -novopt -suppress 12110 top "+testname=test_all_rand_pkts" -l eth_pkt.log 
+# Start time: 22:24:47 on Jun 25,2026
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.a19_svh_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.a19_svh_unit
+# Loading work.top
+# testname received from user = test_all_rand_pkts
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 22:31:27 on Jun 25,2026
+# vlog -reportprogress 300 a19.svh 
+# -- Compiling package a19_svh_unit
+# ** Warning: eth_gen.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(26): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(33): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(44): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(52): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(60): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 22:31:27 on Jun 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
+# End time: 22:31:29 on Jun 25,2026, Elapsed time: 0:06:42
+# Errors: 0, Warnings: 7
+# vsim -novopt -suppress 12110 top "+testname=test_all_rand_pkts" -l eth_pkt.log 
+# Start time: 22:31:29 on Jun 25,2026
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.a19_svh_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.a19_svh_unit
+# Loading work.top
+# testname received from user = test_all_rand_pkts
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 22:39:26 on Jun 25,2026
+# vlog -reportprogress 300 a19.svh 
+# -- Compiling package a19_svh_unit
+# ** Warning: eth_gen.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(26): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(33): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(44): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(52): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(60): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 22:39:26 on Jun 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
+# End time: 22:39:29 on Jun 25,2026, Elapsed time: 0:08:00
+# Errors: 0, Warnings: 7
+# vsim -novopt -suppress 12110 top "+test_all_rand_pkts" -l eth_pkt.log 
+# Start time: 22:39:29 on Jun 25,2026
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.a19_svh_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.a19_svh_unit
+# Loading work.top
+# testname received from user = test_all_rand_pkts
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 22:41:15 on Jun 25,2026
+# vlog -reportprogress 300 a19.svh 
+# -- Compiling package a19_svh_unit
+# ** Warning: eth_gen.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(26): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(33): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(44): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(52): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(60): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 22:41:15 on Jun 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
+# End time: 22:41:18 on Jun 25,2026, Elapsed time: 0:01:49
+# Errors: 0, Warnings: 7
+# vsim -novopt -suppress 12110 top "+test_all_rand_pkts" -l eth_pkt.log 
+# Start time: 22:41:18 on Jun 25,2026
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.a19_svh_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.a19_svh_unit
+# Loading work.top
+# testname received from user = test_all_rand_pkts
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+# no testcase matched
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 22:45:32 on Jun 25,2026
+# vlog -reportprogress 300 a19.svh 
+# -- Compiling package a19_svh_unit
+# ** Warning: eth_gen.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(26): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(33): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(44): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(52): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(60): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 22:45:32 on Jun 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
+# End time: 22:45:35 on Jun 25,2026, Elapsed time: 0:04:17
+# Errors: 0, Warnings: 7
+# vsim -novopt -suppress 12110 top "+test_all_rand_pkts" -l eth_pkt.log 
+# Start time: 22:45:35 on Jun 25,2026
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.a19_svh_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.a19_svh_unit
+# Loading work.top
+# testname received from user = test_all_rand_pkts
+# -----time = 0 , name = eth_good_pkt-----
+# sa = 10100010110100001000010001011111100000001101
+# len = 814
+# count_good = 3
+# -----time = 0 , name = eth_ill_pkt-----
+# sa = 100001011110111010100000111110011111100111010101
+# len = 824
+# count_ill = 3
+# -----time = 0 , name = eth_bad_pkt-----
+# sa = 10010000111000110100110011100100001111110001110
+# len = 429
+# count_bad = 4
+# -----time = 0 , name = eth_bad_pkt-----
+# sa = 101100111001000010101110110111110010001010000001
+# len = 104
+# count_bad = 4
+# -----time = 0 , name = eth_good_pkt-----
+# sa = 1110101100000101001010101100011100011001010101
+# len = 477
+# count_good = 3
+# -----time = 0 , name = eth_bad_pkt-----
+# sa = 1111101100111110110010011100001101010110111011
+# len = 780
+# count_bad = 4
+# -----time = 0 , name = eth_bad_pkt-----
+# sa = 110000110110011001000000011000011111111111101010
+# len = 64
+# count_bad = 4
+# -----time = 0 , name = eth_good_pkt-----
+# sa = 11111110100011101100101011111100011010110111001
+# len = 395
+# count_good = 3
+# -----time = 0 , name = eth_ill_pkt-----
+# sa = 11100000111001000011000111000010101100001011
+# len = 727
+# count_ill = 3
+# -----time = 0 , name = eth_ill_pkt-----
+# sa = 111010101000100001000001000100111100010100000110
+# len = 279
+# count_ill = 3
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 22:46:11 on Jun 25,2026
+# vlog -reportprogress 300 a19.svh 
+# -- Compiling package a19_svh_unit
+# ** Warning: eth_gen.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(26): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(33): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(44): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(52): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(60): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 22:46:11 on Jun 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
+# End time: 22:46:13 on Jun 25,2026, Elapsed time: 0:00:38
+# Errors: 0, Warnings: 7
+# vsim -novopt -suppress 12110 top "+test_all_good_pkts" -l eth_pkt.log 
+# Start time: 22:46:13 on Jun 25,2026
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.a19_svh_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.a19_svh_unit
+# Loading work.top
+# testname received from user = test_all_good_pkts
+# -----time = 0 , name = eth_good_pkt-----
+# sa = 11000011101101010000000011010111100110111000
+# len = 170
+# count_good = 10
+# -----time = 0 , name = eth_good_pkt-----
+# sa = 10100010110100001000010001011111100000001101
+# len = 814
+# count_good = 10
+# -----time = 0 , name = eth_good_pkt-----
+# sa = 110000001100010000001110101010001110000000011111
+# len = 1005
+# count_good = 10
+# -----time = 0 , name = eth_good_pkt-----
+# sa = 100001011110111010100000111110011111100111010101
+# len = 824
+# count_good = 10
+# -----time = 0 , name = eth_good_pkt-----
+# sa = 111100000000110010100000100110110101010000110010
+# len = 701
+# count_good = 10
+# -----time = 0 , name = eth_good_pkt-----
+# sa = 10010000111000110100110011100100001111110001110
+# len = 429
+# count_good = 10
+# -----time = 0 , name = eth_good_pkt-----
+# sa = 1010000111111110101001101100001110001101001
+# len = 966
+# count_good = 10
+# -----time = 0 , name = eth_good_pkt-----
+# sa = 101100111001000010101110110111110010001010000001
+# len = 104
+# count_good = 10
+# -----time = 0 , name = eth_good_pkt-----
+# sa = 100000010001001011000010001001100001111110110000
+# len = 987
+# count_good = 10
+# -----time = 0 , name = eth_good_pkt-----
+# sa = 1110101100000101001010101100011100011001010101
+# len = 477
+# count_good = 10
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 22:53:19 on Jun 25,2026
+# vlog -reportprogress 300 a19.svh 
+# -- Compiling package a19_svh_unit
+# ** Warning: eth_gen.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(26): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(33): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(44): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(52): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(60): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 22:53:19 on Jun 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
+# End time: 22:53:22 on Jun 25,2026, Elapsed time: 0:07:09
+# Errors: 0, Warnings: 7
+# vsim -novopt -suppress 12110 top "+test_all_bad_pkts" -l eth_pkt.log 
+# Start time: 22:53:22 on Jun 25,2026
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.a19_svh_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.a19_svh_unit
+# Loading work.top
+# testname received from user = test_all_bad_pkts
+# -----time = 0 , name = eth_bad_pkt-----
+# sa = 11000011101101010000000011010111100110111000
+# len = 170
+# count_bad = 10
+# -----time = 0 , name = eth_bad_pkt-----
+# sa = 10100010110100001000010001011111100000001101
+# len = 814
+# count_bad = 10
+# -----time = 0 , name = eth_bad_pkt-----
+# sa = 110000001100010000001110101010001110000000011111
+# len = 1005
+# count_bad = 10
+# -----time = 0 , name = eth_bad_pkt-----
+# sa = 100001011110111010100000111110011111100111010101
+# len = 824
+# count_bad = 10
+# -----time = 0 , name = eth_bad_pkt-----
+# sa = 111100000000110010100000100110110101010000110010
+# len = 701
+# count_bad = 10
+# -----time = 0 , name = eth_bad_pkt-----
+# sa = 10010000111000110100110011100100001111110001110
+# len = 429
+# count_bad = 10
+# -----time = 0 , name = eth_bad_pkt-----
+# sa = 1010000111111110101001101100001110001101001
+# len = 966
+# count_bad = 10
+# -----time = 0 , name = eth_bad_pkt-----
+# sa = 101100111001000010101110110111110010001010000001
+# len = 104
+# count_bad = 10
+# -----time = 0 , name = eth_bad_pkt-----
+# sa = 100000010001001011000010001001100001111110110000
+# len = 987
+# count_bad = 10
+# -----time = 0 , name = eth_bad_pkt-----
+# sa = 1110101100000101001010101100011100011001010101
+# len = 477
+# count_bad = 10
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 22:54:10 on Jun 25,2026
+# vlog -reportprogress 300 a19.svh 
+# -- Compiling package a19_svh_unit
+# ** Warning: eth_gen.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(26): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(33): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(44): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(52): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: eth_gen.sv(60): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 22:54:10 on Jun 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
+# End time: 22:54:13 on Jun 25,2026, Elapsed time: 0:00:51
+# Errors: 0, Warnings: 7
+# vsim -novopt -suppress 12110 top "+test_all_ill_pkts" -l eth_pkt.log 
+# Start time: 22:54:13 on Jun 25,2026
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing C:/Navya/VLSIGURU/System_Verilog/oops/work.a19_svh_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.a19_svh_unit
+# Loading work.top
+# testname received from user = test_all_ill_pkts
+# -----time = 0 , name = eth_ill_pkt-----
+# sa = 11000011101101010000000011010111100110111000
+# len = 170
+# count_ill = 10
+# -----time = 0 , name = eth_ill_pkt-----
+# sa = 10100010110100001000010001011111100000001101
+# len = 814
+# count_ill = 10
+# -----time = 0 , name = eth_ill_pkt-----
+# sa = 110000001100010000001110101010001110000000011111
+# len = 1005
+# count_ill = 10
+# -----time = 0 , name = eth_ill_pkt-----
+# sa = 100001011110111010100000111110011111100111010101
+# len = 824
+# count_ill = 10
+# -----time = 0 , name = eth_ill_pkt-----
+# sa = 111100000000110010100000100110110101010000110010
+# len = 701
+# count_ill = 10
+# -----time = 0 , name = eth_ill_pkt-----
+# sa = 10010000111000110100110011100100001111110001110
+# len = 429
+# count_ill = 10
+# -----time = 0 , name = eth_ill_pkt-----
+# sa = 1010000111111110101001101100001110001101001
+# len = 966
+# count_ill = 10
+# -----time = 0 , name = eth_ill_pkt-----
+# sa = 101100111001000010101110110111110010001010000001
+# len = 104
+# count_ill = 10
+# -----time = 0 , name = eth_ill_pkt-----
+# sa = 100000010001001011000010001001100001111110110000
+# len = 987
+# count_ill = 10
+# -----time = 0 , name = eth_ill_pkt-----
+# sa = 1110101100000101001010101100011100011001010101
+# len = 477
+# count_ill = 10
+# End time: 23:44:44 on Jun 25,2026, Elapsed time: 0:50:31
+# Errors: 0, Warnings: 1

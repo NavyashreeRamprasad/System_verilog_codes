@@ -1,4 +1,6 @@
 vlib work
-vlog a14.sv
-vsim top +testname=test_sof_rand_disabled
+vlog adv1.sv
+vsim -novopt -suppress 12110 tb 
+#add wave -position insertpoint sim:/top/*
+#do wave.do
 run -all

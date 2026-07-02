@@ -4,14 +4,14 @@ endclass
 
 class eth_pkt;
 eth_pkt2 ep= new();
-randc     bit [2:0] sof;
-static    int count=0;
-rand 	  bit [47:0] da;
-rand      bit [15:0] len;
-rand	  int len_cons;
-rand      byte payload[];
-	      bit [31:0] crc;
-		  string testname;
+randc     bit [7:0]   sof;
+static    int         count=0;
+rand 	    bit [47:0]  da;
+rand      bit [15:0]  len;
+rand	    int         len_cons;
+rand      byte        payload[];
+	        bit [31:0]  crc;
+		      string      testname;
 constraint c2{
 len_cons inside {[10:20]};
 };

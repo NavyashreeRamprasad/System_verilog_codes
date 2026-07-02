@@ -1,0 +1,6 @@
+//`include "eth_common.sv"
+`include "eth_tx.sv"
+`include "eth_gen.sv"
+`include "eth_bfm.sv"
+`include "eth_env.sv"
+`include "eth_top.sv"
